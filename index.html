@@ -38,7 +38,7 @@
             padding: 20px;
             margin-bottom: 20px;
         }
-        .checkmark {
+        .status-symbol {
             font-size: 48px;
             display: block;
         }
@@ -50,16 +50,24 @@
     <p>Last updated: <span id="timestamp">Loading...</span></p>
 
     <!-- Overall System Status -->
-    <div class="status-box operational overall-status">
-        <span class="checkmark">✔️</span>
-        Overall System Status: Operational
+    <div class="status-box down overall-status">
+        <span class="status-symbol">❌</span>
+        Some services are experiencing downtime
     </div>
 
     <!-- Individual System Statuses -->
     <div class="status-container">
-        <div class="status-box degraded">API: Degraded Performance</div>
-        <div class="status-box down">Dashboard: Major Outage</div>
-        <div class="status-box operational">Notifications: Operational</div>
+        <div class="status-box operational">Admin</div>
+        <div class="status-box degraded">Booking Site</div>
+        <div class="status-box operational">Account Login</div>
+        <div class="status-box down">Payment Processing</div>
+        <div class="status-box operational">Salon & Member Notifications</div>
+        <div class="status-box operational">Marketing</div>
+        <div class="status-box operational">Client Notifications</div>
+        <div class="status-box operational">Reporting & Analytics</div>
+        <div class="status-box operational">Payroll</div>
+        <div class="status-box operational">Support</div>
+        
     </div>
 
     <script>
