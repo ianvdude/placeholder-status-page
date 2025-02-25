@@ -6,12 +6,42 @@
     <meta name="description" content="Placeholder status page for testing a web crawler.">
     <title>Placeholder Status Page</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 40px; text-align: center; }
-        .status-container { max-width: 600px; margin: auto; }
-        .status-box { padding: 15px; margin: 10px 0; border-radius: 5px; font-weight: bold; }
-        .operational { background-color: #d4edda; color: #155724; }  /* Green */
-        .degraded { background-color: #fff3cd; color: #856404; }  /* Yellow */
-        .down { background-color: #f8d7da; color: #721c24; }  /* Red */
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 40px; 
+            text-align: center; 
+        }
+        .status-container { 
+            max-width: 600px; 
+            margin: auto; 
+        }
+        .status-box { 
+            padding: 15px; 
+            margin: 10px 0; 
+            border-radius: 5px; 
+            font-weight: bold; 
+        }
+        .operational { 
+            background-color: #d4edda; 
+            color: #155724; 
+        }  /* Green */
+        .degraded { 
+            background-color: #fff3cd; 
+            color: #856404; 
+        }  /* Yellow */
+        .down { 
+            background-color: #f8d7da; 
+            color: #721c24; 
+        }  /* Red */
+        .overall-status {
+            font-size: 24px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .checkmark {
+            font-size: 48px;
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -19,8 +49,14 @@
     <h1>Placeholder Status Page</h1>
     <p>Last updated: <span id="timestamp">Loading...</span></p>
 
+    <!-- Overall System Status -->
+    <div class="status-box operational overall-status">
+        <span class="checkmark">✔️</span>
+        Overall System Status: Operational
+    </div>
+
+    <!-- Individual System Statuses -->
     <div class="status-container">
-        <div class="status-box operational">Overall System Status: Operational</div>
         <div class="status-box degraded">API: Degraded Performance</div>
         <div class="status-box down">Dashboard: Major Outage</div>
         <div class="status-box operational">Notifications: Operational</div>
